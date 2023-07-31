@@ -15,7 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+/*
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +24,116 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+
+
+mr-5 fixed top-0 right-0 flex flex-row space-x-8 mt-5
+
+relative bottom-2
+
+sidebar
+fixed inset-y-0 left-0 mw-auto bg-white
+*/
+
+.input {
+  width: 150px;
+}
+
+.sideIconePosition
+{
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+}
+
+.buttomside_position
+{
+  position: relative;
+  bottom: 60px;
+}
+
+.contactPosition
+{
+  position: relative;
+  top: -35px;
+}
+
+@screen md {
+  .headmd {
+    @apply mr-5 absolute top-0 right-0 flex flex-row space-x-8 mt-5;
+  }
+}
+
+.contact{
+  /*visibility: hidden;*/
+  display: none;
+}
+
+
+@screen md {
+  .contact_visible{
+    display: block;
+  }
+}
+
+@screen md {
+  .sidebarmd {
+    @apply  bg-white;
+  }
+}
+
+@screen md {
+  .mdbtn {
+    @apply flex flex-col space-y-3 items-center w-full;
+    position: relative;
+  bottom: 50px;
+  
+  }
+}
+
+@screen md {
+  .page1md {
+    @apply flex flex-row space-x-10 w-full ;
+    
+    
+  }
+}
+@screen md {
+  .page01md {
+    
+    position: absolute;
+    left: 300px;
+  }
+}
+
+@screen md {
+  .page02md {
+    
+    position: relative;
+   
+    right:150px
+  }
+}
+
+@screen md {
+  .page2md {
+    @apply flex flex-row w-full justify-center;
+   
+  }
+}
+
+@screen md {
+  .page002md {
+    @apply w-80 h-60 ;
+   
+  }
+}
+
+
+@screen md {
+  .foot1{
+    @apply flex flex-row space-x-8 p-4;
+   
+  }
 }
